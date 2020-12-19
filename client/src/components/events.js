@@ -23,6 +23,8 @@ export const EVENTS = [
         "type": "event type",
         "description": "some description",
         "image": "image link",
+        "organiser": "XYZ",
+        "sponsers": ["Eco-friend", "IBM"],
         "__v": 0
     },
     {
@@ -49,6 +51,8 @@ export const EVENTS = [
         "type": "eventtype",
         "description": "some more description",
         "image": "image link",
+        "organiser": "ABC",
+        "sponsers": ["IBM", "Eco-friend"],
         "__v": 0
     }
 ];

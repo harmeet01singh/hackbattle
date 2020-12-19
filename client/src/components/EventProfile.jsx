@@ -2,21 +2,28 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 
 export default function EventProfile(props) {
+    const sponsersDisplay = props.eve.sponsers.map((sponser)=>{
+        return (
+            <span>
+                {sponser} &nbsp; 
+            </span>
+        );
+    });
     return (
         <div className="container-fluid">
             <div className='row p-5'>
                 <div className='col-12 border p-3 border-danger'>
-                    <h1>Event Name</h1>
+                    <h1>{props.eve.name}</h1>
                 </div>
                 <div className='col-12 p-3'>
                     <div className='row  justify-content-around'>
-                        <h6 >Arranged By - </h6>
-                        <h6 >Sponsers - </h6>
-                        <h6 >Type - </h6>
+                        <h6 >Arranged By - {props.eve.organiser}</h6>
+                        <h6 >Sponsers - {sponsersDisplay}</h6>
+                        <h6 >Type - {props.eve.type}</h6>
                     </div>
                     <div className='row justify-content-between'>
-                        <h6 >Start Date - </h6>
-                        <h6 >End Date - </h6>
+                        <h6 >Start Date - {props.eve.startDate}</h6>
+                        <h6 >End Date - {props.eve.endDate}</h6>
                     </div>
                 </div>
                 <div className='col-12 col-sm-4 p-3 img-fluid'>
@@ -25,7 +32,7 @@ export default function EventProfile(props) {
                 <div className='col-12 col-sm-8 p-3'>
                     <h5 className='text-left'>Tagline for event</h5>
                     <hr></hr>
-                    <p className="text-left">Description of the Event Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                    <p className="text-left">{props.eve.description}</p>
                 </div>
                 <div className='col-12'>
                 <div className='row justify-content-around'>
