@@ -21,7 +21,7 @@ export default class MainComponent extends Component {
     render() {
         const EventProfileID = ({match}) => {
             return (
-                <EventProfile eve={this.state.events.filter((eve) => eve._id === parseInt(match.params._id,10))[0]} />
+                <EventProfile eve={this.state.events.filter((eve) => eve._id === match.params.eventID)[0]} />
             );
         }
         return (
