@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import EventList from './EventList';
 import EventProfile from './EventProfile';
-import { EVENTS } from './events';
+import {EVENTS} from './events';
+import SignIn from './SignInComponent';
+import LogIn from './LogInComponent';
+import ContactUs from './ContactUsComponent';
+import Organizer from './OrganizerComponent';
 // import React, { Component } from 'react'
 // import Eventlist from './EventList'
 // import Eventprofile from './EventProfile'
@@ -25,7 +29,14 @@ export default class MainComponent extends Component {
                 <Switch>
                     <Route exact path='/events' component={() => <EventList events={this.state.events}/>} />
                     <Route exact path="/events/:eventID" component={EventProfileID} />
-                    <Redirect to="/events" />
+                    <Route exact path='/contactus' component={ContactUs} />
+                    {/*<Redirect to="/events" />*/}
+                    <Route exact path='/signin' component={SignIn} />
+                    <Route exact path='/login' component={LogIn} />
+
+                    {/*Admin Paths*/}
+
+                    <Route exact path='/organizer' component={Organizer} />
                 </Switch>
             </div>
         )

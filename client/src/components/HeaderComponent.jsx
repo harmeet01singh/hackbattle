@@ -18,13 +18,13 @@ export default function HeaderComponent() {
                     <Link class="nav-link text-light" to="/events">Upcoming Events</Link>
                 </li>
                 <li class="nav-item">
-                    <Link class="nav-link text-light" to="/events">contact us</Link>
+                    <Link class="nav-link text-light" to="/contactus">Contact Us</Link>
                 </li>
                 <li class="nav-item">
-                    <Link class="nav-link text-light" to="/events">Log In</Link>
+                    <Link class="nav-link text-light" to="/login">Log In</Link>
                 </li>
                 <li class="nav-item">
-                    <Link class="nav-link text-light" to="/events">Sign In</Link>
+                    <Link class="nav-link text-light" to="/signin">Sign In</Link>
                 </li>
             </ul>
         </div>
