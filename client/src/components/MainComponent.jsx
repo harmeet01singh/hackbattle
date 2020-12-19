@@ -4,6 +4,9 @@ import FooterComponent from './FooterComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import EventList from './EventList';
 import EventProfile from './EventProfile';
+// import React, { Component } from 'react'
+// import Eventlist from './EventList'
+// import Eventprofile from './EventProfile'
 
 export default class MainComponent extends Component {
     render() {
