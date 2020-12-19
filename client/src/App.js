@@ -1,14 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Maincomponent from './components/MainComponent'
+import Header from './components/HeaderComponent'
+import Footer from './components/FooterComponent'
 
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 class="text-danger">Hello</h1>
+        <Header/>
       </header>
+      <div>
+        <Maincomponent/>
+      </div>
+      <Footer/>
     </div>
   );
 }
