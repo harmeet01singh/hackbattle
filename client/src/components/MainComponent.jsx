@@ -30,13 +30,12 @@ export default class MainComponent extends Component {
                     <Route exact path='/events' component={() => <EventList events={this.state.events}/>} />
                     <Route exact path="/events/:eventID" component={EventProfileID} />
                     <Route exact path='/contactus' component={ContactUs} />
-                    {/*<Redirect to="/events" />*/}
                     <Route exact path='/signin' component={SignIn} />
                     <Route exact path='/login' component={LogIn} />
-
                     {/*Admin Paths*/}
 
                     <Route exact path='/organizer' component={Organizer} />
+                    <Redirect to="/events" />
                 </Switch>
             </div>
         )
