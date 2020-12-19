@@ -1,6 +1,9 @@
 
 /*USER DEFINED CSS*/
 
+.App {
+    text-align:center;
+}
 .footer{
   min-height: 10vh;
   background-color: aliceblue;
