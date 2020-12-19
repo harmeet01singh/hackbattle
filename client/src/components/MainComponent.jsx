@@ -6,8 +6,8 @@ export default class MainComponent extends Component {
     render() {
         return (
             <div className="full-height">
-                {/*<Eventlist/>*/}
-                <Eventprofile/>
+                <Eventlist/>
+                {/*<Eventprofile/>*/}
             </div>
         )
     }
