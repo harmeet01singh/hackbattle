@@ -30,7 +30,7 @@ export default class OrganizerComponent extends Component {
                 {/*2*/}
                 <div className='row p-3 m-2'>
                     <label for="ngoName" className="col-4">NGO Name</label>
-                    <input type="text" name="ngoName" className="form-control col-8"required/>
+                    <input type="text" name="ngoName" className="form-control col-8" required/>
                 </div>
                 {/*3*/}
                 <div className='row p-3 m-2'>

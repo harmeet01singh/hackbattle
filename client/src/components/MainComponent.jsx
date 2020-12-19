@@ -25,7 +25,7 @@ export default class MainComponent extends Component {
             );
         }
         return (
-            <div className="full-height">
+            <div className="full-height bg-light">
                 <Switch>
                     <Route exact path='/events' component={() => <EventList events={this.state.events}/>} />
                     <Route exact path="/events/:eventID" component={EventProfileID} />
