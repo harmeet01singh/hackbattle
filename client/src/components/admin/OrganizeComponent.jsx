@@ -32,7 +32,7 @@ export default class OrganizerComponent extends Component {
     render(){
         return (
             <div className="container p-5">
-                <form className="border border-secondary" onSubmit={this.handleSubmit}>
+                <form className="border bg-white border-secondary" onSubmit={this.handleSubmit}>
                 <h3 className="px-2 pt-3 pd-1 text-center">Organize Event</h3>
                 <hr className="w-100"></hr>
                 {/*1*/}

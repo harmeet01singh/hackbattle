@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function HeaderComponent() {
     return (
-        <nav class="navbar navbar-expand navbar-light bg-dark">
+        <nav class="px-5 navbar navbar-expand navbar-light bg-dark shadow-lg">
         <Link class="navbar-brand text-light" to="/events">Logo</Link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,8 +26,13 @@ export default function HeaderComponent() {
                 <li class="nav-item">
                     <Link class="nav-link text-light" to="/signin">Sign In</Link>
                 </li>
+                {/*<li class="nav-item">
+                    <Link class="nav-link text-light" to="/admindash">Admin</Link>
+                </li>*/}
             </ul>
         </div>
         </nav>
     )
 }
+
+
