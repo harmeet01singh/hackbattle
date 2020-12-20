@@ -8,9 +8,23 @@ export default class OrganizerComponent extends Component {
     handleSubmit = (event) =>{
         event.preventDefault();
         var data = {};
+        var links = [];
         for(let i = 0;i < event.target.length; i++){
-            if(event.target[i].name != ''){
-                data[event.target[i].name] = event.target[i].value
+            if(i == 9){
+                links.push({"fb": event.target[i].value });
+            }
+            else if (i == 10){
+                links.push({"insta": event.target[i].value });
+            }
+            else if (i == 11){
+                links.push({"twitter": event.target[i].value });
+            }
+            else if (i == 12){
+                links.push({"website": event.target[i].value });
+                data["links"] = links;
+            }
+            else if(event.target[i].name != ''){
+                data[event.target[i].name] = event.target[i].value;
             }
         }
         console.log(data);
@@ -23,14 +37,14 @@ export default class OrganizerComponent extends Component {
                 <hr className="w-100"></hr>
                 {/*1*/}
                 <div className='row p-3 m-2'>
-                    <label for="eventName" className='col-4'>Event Name</label>
-                    <input type="text" name="eventName" className="form-control col-8" 
+                    <label for="name" className='col-4'>Event Name</label>
+                    <input type="text" name="name" className="form-control col-8" 
                     required/>
                 </div>
                 {/*2*/}
                 <div className='row p-3 m-2'>
-                    <label for="ngoName" className="col-4">NGO Name</label>
-                    <input type="text" name="ngoName" className="form-control col-8" required/>
+                    <label for="ngo" className="col-4">NGO Name</label>
+                    <input type="text" name="ngo" className="form-control col-8" required/>
                 </div>
                 {/*3*/}
                 <div className='row p-3 m-2'>
@@ -70,20 +84,24 @@ export default class OrganizerComponent extends Component {
                 {/*10*/}
                 {/*Facebook*/}
                 <div className='row p-3 m-2'>
-                    <label for="fbProf" className='col-4'>Facebook profile of NGO</label>
-                    <input type="link" name="fbProf" className="form-control col-8" required/>
+                    <label for="fb" className='col-4'>Facebook profile of NGO</label>
+                    <input type="link" name="fb" className="form-control col-8" required/>
                 </div>
                 {/*instagram*/}
                 <div className='row p-3 m-2'>
-                    <label for="InstaProf" className='col-4'>Instagram profile of NGO</label>
-                    <input type="link" name="InstaProf" className="form-control col-8" required/>
+                    <label for="Insta" className='col-4'>Instagram profile of NGO</label>
+                    <input type="link" name="Insta" className="form-control col-8" required/>
                 </div>
                 {/*twitter*/}
                 <div className='row p-3 m-2'>
-                    <label for="twitterProf" className='col-4'>Twitter profile of NGO</label>
-                    <input type="link" name="twitterProf" className="form-control col-8" required/>
+                    <label for="twitter" className='col-4'>Twitter profile of NGO</label>
+                    <input type="link" name="twitter" className="form-control col-8" required/>
                 </div>
                 {/*11*/}
+                <div className='row p-3 m-2'>
+                    <label for="website" className='col-4'>Website of NGO</label>
+                    <input type="link" name="website" className="form-control col-8" required/>
+                </div>
                 <div className='row p-3 m-2'>
                     <label for="sponsers" className='col-4'>Sponsers</label>
                     <input type="text" name="sponsers" className="form-control col-8" required/>
