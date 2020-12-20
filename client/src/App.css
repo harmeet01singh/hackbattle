@@ -16,3 +16,19 @@
 .eve-img{
   height: 25%;
 }
+
+.crd-size{
+  width: fit-content;
+}
+.bgc{
+  background-color: #EEA47FFF;
+}
+
+.bg-cc{
+  background-color: #00539CFF;
+}
+
+.bg-banner-1{
+  background-image: url('./images/human-and-map.svg');
+  background-size: 100%;
+}

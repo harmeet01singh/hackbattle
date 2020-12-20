@@ -55,7 +55,7 @@ export default function SignInComponent() {
             </div>
             {/*submit button*/}
             <div className='row p-3 justify-content-center'>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary">Sign In</button>
             </div>
             </form>
         </div>

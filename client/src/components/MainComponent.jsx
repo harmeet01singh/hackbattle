@@ -6,7 +6,8 @@ import {EVENTS} from './events';
 import SignIn from './SignInComponent';
 import LogIn from './LogInComponent';
 import ContactUs from './ContactUsComponent';
-import Organizer from './OrganizerComponent';
+import Organizer from './admin/OrganizeComponent';
+import AdminDash from './admin/AdminDashboard';
 // import React, { Component } from 'react'
 // import Eventlist from './EventList'
 // import Eventprofile from './EventProfile'
@@ -25,7 +26,7 @@ export default class MainComponent extends Component {
             );
         }
         return (
-            <div className="full-height bg-light">
+            <div className="full-height bg-banner-1">
                 <Switch>
                     <Route exact path='/events' component={() => <EventList events={this.state.events}/>} />
                     <Route exact path="/events/:eventID" component={EventProfileID} />
@@ -35,7 +36,7 @@ export default class MainComponent extends Component {
                     <Route exact path='/login' component={LogIn} />
 
                     {/*Admin Paths*/}
-
+                    <Route exact path='/admindash' component={AdminDash} />
                     <Route exact path='/organizer' component={Organizer} />
                 </Switch>
             </div>

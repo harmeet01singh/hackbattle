@@ -3,7 +3,7 @@ import React from 'react'
 export default function OrganizerComponent() {
     return (
         <div className="container p-5">
-            <form className="border border-secondary">
+            <form className="border bg-white border-secondary">
             <h3 className="px-2 pt-3 pd-1 text-center">Organize Event</h3>
             <hr className="w-100"></hr>
             {/*1*/}
