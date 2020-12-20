@@ -6,11 +6,8 @@ import {EVENTS} from './events';
 import SignIn from './SignInComponent';
 import LogIn from './LogInComponent';
 import ContactUs from './ContactUsComponent';
-import Organizer from './admin/OrganizeComponent';
-import AdminDash from './admin/AdminDashboard';
-// import React, { Component } from 'react'
-// import Eventlist from './EventList'
-// import Eventprofile from './EventProfile'
+import Organizer from './OrganizeComponent';
+import AdminDash from './AdminDashboard';
 
 export default class MainComponent extends Component {
     constructor(props){
